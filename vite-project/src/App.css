@@ -8,6 +8,7 @@ body {
   background-color: #111f28;
   color: white;
   padding: 10px 0;
+
 }
 
 .icon {
@@ -20,32 +21,33 @@ body {
 
 .top-navbar-left {
   display: flex;
-  flex-direction: row; 
+  flex-wrap: wrap;
   align-items: center;
   gap: 20px; 
 }
 
 .top-navbar-right {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 10px;
 }
 
 @media (max-width: 768px) {
   .top-navbar-left {
-    flex-direction: column;
+    font-size: 13px;
     gap: 10px; 
     width: 100% !important;
   }
 
   .top-navbar-right {
+    
     margin-top: 10px; 
+    font-size: 13px;
+    width: 100% !important;
   }
 
-  .container {
-    flex-direction: column; 
-    align-items: flex-start; 
-  }
+
   
 }
 /*---------------------------Main Navbar------------------------------------*/
@@ -66,6 +68,7 @@ body {
 /*---------------Toggle Button-------------------------*/
 .toggle-btn {
   display: none !important ;
+  left: 85% !important;
 }
 
 @media (max-width: 1120px) {
