@@ -1,5 +1,4 @@
 import React from 'react'
-<<<<<<< HEAD
 import './Header.css'
 
 const Header = () => {
@@ -14,14 +13,7 @@ const Header = () => {
       <img src="img1.png" alt="" />
       <p> zahidabdullah161@gmail.com</p>
     </div>
-=======
-import TopNavbar from './TopNavbar/TopNavbar'
-const Header = () => {
-  return (
-    <>
-    <TopNavbar/>
-    </>
->>>>>>> 4562da246c627435f1b726f1014fe04bfa373b56
+
   )
 }
 
