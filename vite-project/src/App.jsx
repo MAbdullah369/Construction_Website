@@ -8,6 +8,8 @@ import Projects from './Components/Projects/Projects'
 import Services from './Components/Services/Services'
 import Csr from './Components/Csr/Csr'
 import ContactUs from './Components/ContactUS/ContactUs'
+import HomeServices from './Components/Home/HomeServices/HomeServices'
+
 function App() {
   return (
     <>
@@ -23,6 +25,7 @@ function App() {
       <Route path='/contact-us' element={<ContactUs/>}/>
     </Routes>
     </Router>
+    <HomeServices/>
     </>
   )
 }
