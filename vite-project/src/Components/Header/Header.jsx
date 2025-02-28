@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 import './Header.css'
 
@@ -16,5 +17,18 @@ const Header = () => {
 
   )
 }
+=======
+import React from "react";
+import TopNavbar from "./TopNavbar/TopNavbar";
+import Navbar from "./Navbar/Navbar";
+const Header = () => {
+  return (
+    <>
+      <TopNavbar />
+      <Navbar />
+    </>
+  );
+};
+>>>>>>> 1854c389d382e2fd071884458fd219f8aa5c2207
 
-export default Header
+export default Header;
