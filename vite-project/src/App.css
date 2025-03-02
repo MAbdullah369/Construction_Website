@@ -1,6 +1,6 @@
 /* Navbar ke liye styling */
 .top-navbar {
-  background-color: #111f28;
+  background-color: #272D39 !important;
   color: white;
   padding: 10px 0;
 }
@@ -287,4 +287,173 @@ color: white;
   width: 105px;
   margin: 2px auto;
   overflow: hidden;
+}
+.left-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.left-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contact-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+
+}
+
+.contact-button span {
+  display: inline-block;
+}
+@media (min-width:769px) and (max-width:1200px) {
+  .contact-button {
+    width: 60%;
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+@media (max-width: 768px) {
+  .contact-button {
+    width: 60%;
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-button {
+    width: 60%;
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.left-image {
+  opacity: 0; /* Shuru mein image ko hidden rakhna ka lia opacity use krr rha hn */
+}
+
+.left-image.animate {
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+.UpperCaseLetters{
+  text-transform: uppercase;
+}
+
+.sector-container {
+  display: flex;
+  width: 100%;
+  border: 2px solid #ccc;
+  flex-wrap: wrap;
+}
+
+.sector-box {
+  flex: 1;/*har box ko equal space mila gi*/
+  text-align: center;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: #6f6c6c;
+  background-color: #fff;
+  border-right: 1px solid #ccc;
+  min-width: 120px;
+}
+.sector-box:last-child {
+  border-right: none;
+}
+
+.sector-box:hover {
+  background-color: #0077cc;
+  color: white;
+}
+
+.sector-box.active {
+  background-color: #0099ff;
+  color: white;
+}
+.textColor{
+  color:  gray;
+}
+.left-mission{
+  background-color:#0099ff;
+  text-align: center;
+}
+.left-mission h3, 
+.left-mission h6 {
+  color: white;
+}
+
+.email-input-container {
+  display: flex;  
+  align-items: center;
+  padding-left: 15%;
+  padding-top: 6%;
+  width: 300px;
+}
+
+.email-input {
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.email-input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-style: italic;
+}
+
+.send-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.underline {
+  height: 1px;
+  background: white;
+  width: 100%;
+  margin-top: 2px;
+}
+.keepleft{
+  padding: 8px;
+}
+
+
+.color_paragraph{
+   color: #6f6c6c;
 }
