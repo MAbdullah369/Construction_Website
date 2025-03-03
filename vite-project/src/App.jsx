@@ -9,6 +9,7 @@ import Services from './Components/Services/Services'
 import Csr from './Components/Csr/Csr'
 import ContactUs from './Components/ContactUS/ContactUs'
 import HomeServices from './Components/Home/HomeServices/HomeServices'
+import Footer from './Components/Footer/Footer'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
     </Routes>
     </Router>
     <HomeServices/>
+    <Footer/>
     </>
   )
 }
