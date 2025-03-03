@@ -13,7 +13,13 @@ const HomeServices = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [activeTab, setActiveTab] = useState("Government");
   const imageRef = useRef(null);
-
+  const [count, setCount] = useState({
+    projects: 0,
+    clients: 0,
+    experience: 0,
+    sqft: 0,
+  });
+  const [startCounting, setStartCounting] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       if (imageRef.current) {
@@ -29,6 +35,43 @@ const HomeServices = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+
+
+
+
+  // Function to check if section is in viewport
+  useEffect(() => {
+    const onScroll = () => {
+      const section = document.getElementById("stats-section");
+      if (section) {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+          setStartCounting(true);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  // Function to animate numbers when visible
+  useEffect(() => {
+    if (!startCounting) return;
+
+    const interval = setInterval(() => {
+      setCount((prev) => ({
+        projects: prev.projects < 200 ? prev.projects + 5 : 200,
+        clients: prev.clients < 50 ? prev.clients + 2 : 50,
+        experience: prev.experience < 40 ? prev.experience + 1 : 40,
+        sqft: prev.sqft < 10000 ? prev.sqft + 250 : 10000,
+      }));
+    }, 50);
+
+    return () => clearInterval(interval);
+  }, [startCounting]);
+
 
   return (
     <>
@@ -296,10 +339,37 @@ const HomeServices = () => {
     </div>
   </div>
 
-  <div className="col-md-4 d-flex align-items-stretch">
+  <div className="col-md-4 d-flex align-items-stretch position-relative">
     <div className="w-100 d-flex justify-content-center align-items-center">
-      <img src={BuidlingPic} alt="Building" className="img-fluid w-100 h-100 object-fit-cover"/>
+      <img src={BuidlingPic} alt="Building" className="img-fluid w-100 h-100 object-fit-cover " />
+      <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+
+{/* Grid Text Content */}
+<div className="position-absolute top-50 start-50 translate-middle w-100 px-3 text-white" id="stats-section">
+        <div className="container">
+          <div className="row text-center text-uppercase textSizesmall">
+            <div className="col-md-3 d-flex flex-column align-items-center ">
+              <h5>{count.projects}+</h5>
+              <p className="textSizesmall">Projects</p>
+            </div>
+            <div className="col-md-3 d-flex flex-column align-items-center">
+              <h5>{count.clients}+</h5>
+              <p className="textSizesmall">Clients</p>
+            </div>
+            <div className="col-md-3 d-flex flex-column align-items-center">
+              <h5>{count.experience}+</h5>
+              <p className="textSizesmall">Years of Experience</p>
+            </div>
+            <div className="col-md-3 d-flex flex-column align-items-center">
+              <h5>{count.sqft}+</h5>
+              <p className="textSizesmall">Delivered SQ.FT</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
+    
   </div>
 
   <div className="col-md-4 d-flex align-items-stretch">

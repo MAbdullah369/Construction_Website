@@ -457,3 +457,8 @@ color: white;
 .color_paragraph{
    color: #6f6c6c;
 }
+@media(max-width :420px){
+.textSizesmall{
+  font-size:10px;
+}
+}
