@@ -22,17 +22,14 @@ const TopNavbar = () => {
 
               <div className="d-flex align-items-center gap-2">
                 <FaPhone className="icon" />
-                <p className="mb-0">(+92-42) 36622255</p>
+                <p className="mb-0">(+92 ) 33 4440573</p>
               </div>
 
-              <div className="d-flex align-items-center gap-2">
-                <FaFax className="icon" />
-                <p className="mb-0">(+92-42) 36622408</p>
-              </div>
+            
 
               <div className="d-flex align-items-center gap-2">
                 <FaEnvelope className="icon" />
-                <p className="mb-0">info@kingcrete.com</p>
+                <p className="mb-0">info@ferrumengineering.com.pk</p>
               </div>
             </div>
           </div>
@@ -40,7 +37,7 @@ const TopNavbar = () => {
           <div className="col-sm-3 col-xs-12">
             <div className="d-flex align-items-center justify-content-end gap-1 top-navbar-right">
               <FaFacebookF className="facebook-icon" />
-              <p className="brand-name mb-0">KINGCRETE</p>
+              <p className="brand-name mb-0">FERRUM ENGINEERING</p>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
-import Logo from "../../../Pictures/llilogo.png";
+import Logo from "../../../Pictures/ferrum-engineering-logo-full-color-rgb-500px-w-72ppi.png";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Button from "react-bootstrap/Button";
 
