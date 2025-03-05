@@ -5,7 +5,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import HomeImage from "../../Pictures/home2-slider-banner-img-03.jpg";
 import HomeImage_02 from "../../Pictures/home2-slider-banner-img-02.jpg";
-import HomeServices from "./HomeServices/HomeServices";
+// import HomeServices from "./HomeServices/HomeServices";
 
 const Home = () => {
   const [hoverPrevious, setHoverPrevious] = useState(false);
@@ -81,7 +81,7 @@ const Home = () => {
         </button>
       </div>
 
-  <HomeServices/>
+  {/* <HomeServices/> */}
     </>
   );
   
