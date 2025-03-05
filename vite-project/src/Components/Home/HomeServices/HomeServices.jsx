@@ -37,23 +37,27 @@ const HomeServices = () => {
   }, []);
 
 
+  const checkVisibility = () => {
+    const section = document.getElementById("stats-section");
+    if (section) {
+      const rect = section.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom >= 0) {
+        setStartCounting(true);
+      }
+    }
+  };
 
 
 
   // Function to check if section is in viewport
   useEffect(() => {
-    const onScroll = () => {
-      const section = document.getElementById("stats-section");
-      if (section) {
-        const rect = section.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom >= 0) {
-          setStartCounting(true);
-        }
-      }
-    };
+    // Run check on mount in case the section is already visible
+    checkVisibility();
 
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
+    // Add event listener
+    window.addEventListener("scroll", checkVisibility);
+
+    return () => window.removeEventListener("scroll", checkVisibility);
   }, []);
 
   // Function to animate numbers when visible
@@ -350,19 +354,19 @@ const HomeServices = () => {
           <div className="row text-center text-uppercase textSizesmall">
             <div className="col-md-3 d-flex flex-column align-items-center ">
               <h5>{count.projects}+</h5>
-              <p className="textSizesmall">Projects</p>
+              <h6 className="textSizesmall">Projects</h6>
             </div>
             <div className="col-md-3 d-flex flex-column align-items-center">
               <h5>{count.clients}+</h5>
-              <p className="textSizesmall">Clients</p>
+              <h6 className="textSizesmall">Clients</h6>
             </div>
             <div className="col-md-3 d-flex flex-column align-items-center">
               <h5>{count.experience}+</h5>
-              <p className="textSizesmall">Years of Experience</p>
+              <h6 className="textSizesmall">Years of Experience</h6>
             </div>
             <div className="col-md-3 d-flex flex-column align-items-center">
               <h5>{count.sqft}+</h5>
-              <p className="textSizesmall">Delivered SQ.FT</p>
+              <h6 className="textSizesmall">Delivered SQ.FT</h6>
             </div>
           </div>
         </div>

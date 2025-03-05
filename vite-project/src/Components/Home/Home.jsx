@@ -10,7 +10,7 @@ import HomeServices from "./HomeServices/HomeServices";
 const Home = () => {
   const [hoverPrevious, setHoverPrevious] = useState(false);
   const [hoverNext, setHoverNext] = useState(false);
-
+  
   return (
     <>
       <div id="carouselExample" className="carousel slide">
@@ -25,8 +25,8 @@ const Home = () => {
               <div className="image-overlay"></div> 
             </div>
             <div className="carousel-caption d-flex flex-column justify-content-center h-100">
-            <h1>BUILDING A <br /><span className="blue-text">BETTER NATION!</span></h1>
-              <p>We strongly believe in the values of quality, strength, durability, and reliability</p>
+            <h1 className="Building">BUILDING A <br /><span className="blue-text better">BETTER NATION!</span></h1>
+              <p className="customStyling">We strongly believe in the values of quality, strength, durability, and reliability</p>
               <div>
               <button className="btn-Learn-More">LEARN MORE</button>
               <button className="btn-Contact-us">CONTACT US</button>
