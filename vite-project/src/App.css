@@ -488,7 +488,25 @@ color: white;
   padding-top: 6%;
   width: 300px;
 }
-
+@media (max-width : 992px){
+  .customTextSize{
+    font-size: small;
+  }
+}
+@media (max-width : 565px){
+  .customTextSize{
+    padding: 0px 0px !important;
+    font-size: x-small;
+  }
+}
+@media (max-width : 452px){
+  .customTextSize{
+    font-size:xx-small;
+  }
+  .first-last{
+    display: none;
+  }
+}
 .email-input {
   border: none;
   background: transparent;

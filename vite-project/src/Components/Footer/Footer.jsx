@@ -4,8 +4,8 @@ import FooterImage_01 from "../../Pictures/footer-background.png";
 const Footer = () => {
   return (
     <div classname="footer">
-      <div classname="image_container">
-      <img src= {FooterImage_01} alt="" />
+      <div classname="image_container mt-4">
+      <img src= {FooterImage_01} alt="" className='mt-5'/>
       </div>
       <div className='Personal_info'>
         <ul>

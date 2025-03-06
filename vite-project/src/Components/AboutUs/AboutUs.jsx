@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { FaPaperPlane } from "react-icons/fa";
 import BuidlingPic from '../../Pictures/yam-mission-bg-img.jpg'
+import LabourPic from '../../Pictures/man-service-img.png'
 const AboutUs = () => {
   const imageRef = useRef(null);
   const [count, setCount] = useState({
@@ -67,6 +68,31 @@ const AboutUs = () => {
   }, [startCounting]);
   return (
          <div className="container-fluid mt-5 ">
+          <div className="row">
+            <div className="col-md-4">
+              <img src={LabourPic} alt="LabourPic" />
+            </div>
+            <div className="col-md-8 ">
+              <h1 className="UpperCaseLetters">Kingcrete: who we are?</h1>
+              <p style={{color:' #6f6c6c'}}>Kingcrete was established in 1976, and since its inception has undertaken projects in all major fields of civil engineering and allied electrical works. The founder of the firm, Major (R) Nawaz A. Minhas is a civil engineer by profession, and has to his credit hundreds of projects all over the country.</p>
+              <div className="row" style={{color:' #6f6c6c'}}>
+                <div className="col-md-6">
+                  <p>Kingcrete is registered with the Pakistan Engineering Council (PEC) and holds the CA (no limit) license. The company is capable of handlings projects related to buildings, flexible/rigid pavements, runways, roads and bridges, rehabilitation of bridges, marine works and pipeline works. By virtue of its design cell and rich experience of its engineers, the company can also deliver projects on turnkey basis.</p>
+                </div>
+                <div className="col-md-6">
+                  <p>The company comprises of a team of skilled engineers whose individual experience reflects the capability and potential of the organization. Kingcrete has a wide range of construction equipment such as transit mixers, batching plants, concrete pumps, tower cranes, loaders, excavators etc. Any specialized equipment not available with the company which is required for a project is either taken on rent basis or acquired.</p>
+                </div>
+                <div className="col-md-6">
+                  <p>Kingcrete has had the privilege of completing the Navy Heights buildings in Karachi; these towers stand eighteen (18) storeys high and were completed in a record time. Other significant building projects to its credit are the Mall of Lahore in Cantt, DHA O/A Levels School in Karachi, ICI Office Buildings in Karachi, Naval Headquarters in Islamabad, Safari Villas in Bahria Town Rawalpindi and rehabilitation of Pearl Continental Hotels in Karachi, Rawalpindi and Lahore.</p>
+                </div>
+                <div className="col-md-6">
+                  <p>We are proud to say that Kingcrete has an excellent reputation in the armed forces, government and private sectors. Kingcrete was also the seventh (7th) highest tax payer in Pakistan for the year 2013.</p>
+                  <p>Our consolidated turnover for the last 5 years is in excess of PKR 10 billion. We have completed all projects assigned to us to the utmost satisfaction of the customer.</p>
+               
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="row g-0 d-flex">
       <div className="col-md-4 d-flex align-items-stretch">
         <div className="left-mission p-4 w-100">
@@ -158,6 +184,51 @@ const AboutUs = () => {
                 scales.
               </p>
             </div>
+            <div className="container mt-4">
+  <div 
+    className="d-flex justify-content-center align-items-center UpperCaseLetters text-white py-3 px-3 gap-3 customTextSize overflow-auto"
+    style={{ background: '#0099ff', whiteSpace: 'nowrap' }}
+  >
+    <p className="mb-0 flex-shrink-0 first-last">All Projects</p>
+    <p className="mb-0 flex-shrink-0">Contracting</p>
+    <p className="mb-0 flex-shrink-0">Management</p>
+    <p className="mb-0 flex-shrink-0">Development</p>
+    <p className="mb-0 flex-shrink-0 first-last">Construction</p>
+  </div>
+  <div class="card-group gap-3 mt-5">
+  <div class="card">
+    <img src={BuidlingPic} class="card-img-top" alt="..."/>
+  </div>
+  <div class="card">
+    <img src={BuidlingPic} class="card-img-top" alt="..."/>
+  </div>
+
+  <div class="card">
+    <img src={BuidlingPic} className="card-img-top" alt="..."/>
+  </div>
+  <div class="card">
+    <img src={BuidlingPic} class="card-img-top" alt="..."/>
+  </div>
+</div>
+<div class="card-group gap-3 mt-5">
+  <div class="card">
+    <img src={BuidlingPic} class="card-img-top" alt="..."/>
+  </div>
+  <div class="card">
+    <img src={BuidlingPic} class="card-img-top" alt="..."/>
+  </div>
+
+  <div class="card">
+    <img src={BuidlingPic} className="card-img-top" alt="..."/>
+  </div>
+  <div class="card">
+    <img src={BuidlingPic} class="card-img-top" alt="..."/>
+  </div>
+</div>
+
+</div>
+
+
           </div>
   )
 }
