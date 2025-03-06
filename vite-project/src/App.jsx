@@ -8,7 +8,7 @@ import Projects from './Components/Projects/Projects';
 import Services from './Components/Services/Services';
 import Csr from './Components/Csr/Csr';
 import ContactUs from './Components/ContactUS/ContactUs';
-import HomeServices from './Components/Home/HomeServices/HomeServices';
+// import HomeServices from './Components/Home/HomeServices/HomeServices';
 import Footer from './Components/Footer/Footer';
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
           <Route path='/csr' element={<Csr />} />
           <Route path='/contact-us' element={<ContactUs />} />
         </Routes>
-        <HomeServices />
+ 
         <Footer />
       </Router> 
     </>

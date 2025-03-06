@@ -5,7 +5,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import HomeImage from "../../Pictures/home2-slider-banner-img-03.jpg";
 import HomeImage_02 from "../../Pictures/home2-slider-banner-img-02.jpg";
-// import HomeServices from "./HomeServices/HomeServices";
+import HomeServices from "./HomeServices/HomeServices";
 
 const Home = () => {
   const [hoverPrevious, setHoverPrevious] = useState(false);
@@ -30,24 +30,6 @@ const Home = () => {
               <div>
               <button className="btn-Learn-More">LEARN MORE</button>
               <button className="btn-Contact-us">CONTACT US</button>
-              </div>
-            </div>
-          </div>
-          <div className="carousel-item">
-          <div className="image-container">
-              <img
-                src={HomeImage_02}
-                className="d-block w-100 full-width-img"
-                alt="Slide 2"
-              />
-              <div className="image-overlay"></div>
-            </div>
-            <div className="carousel-caption d-flex flex-column justify-content-center h-100">
-            <h1>BUILDING A <br /><span className="blue-text">BETTER NATION!</span></h1>
-              <p>We strongly believe in the values of quality, strength, durability, and reliability</p>
-              <div>
-                <button className="btn-Learn-More">LEARN MORE</button>
-                <button className="btn-Contact-us">CONTACT US</button>
               </div>
             </div>
           </div>
@@ -81,7 +63,7 @@ const Home = () => {
         </button>
       </div>
 
-  {/* <HomeServices/> */}
+  <HomeServices/>
     </>
   );
   
