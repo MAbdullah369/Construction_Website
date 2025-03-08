@@ -552,3 +552,50 @@ color: white;
   font-size:10px;
 }
 }
+.building-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.672);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  color: white;
+  text-align: center;
+  transform: translateY(100%);
+}
+
+.building-card:hover .card-overlay {
+  opacity: 1;
+}
+
+.view-more {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.view-more:hover {
+  background:#0099ff;
+  color:white;
+}
+.building-card:hover img {
+  transform: scale(1.1);
+}
+
+.building-card:hover .card-overlay {
+  transform: translateY(0);
+}

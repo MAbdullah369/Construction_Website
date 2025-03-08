@@ -3,12 +3,14 @@ import constr_imag from "../../../Pictures/lliaboutimg.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaPaperPlane } from "react-icons/fa";
 import BuidlingPic from "../../../Pictures/yam-mission-bg-img.jpg";
+
 import {
   faHouseSignal,
   faPenRuler,
   faRoad,
 } from "@fortawesome/free-solid-svg-icons";
 import { faComputerMouse } from "@fortawesome/free-solid-svg-icons";
+import Cards from "../../Cards/Cards";
 const HomeServices = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [activeTab, setActiveTab] = useState("Government");
@@ -419,6 +421,9 @@ const HomeServices = () => {
             scales.
           </p>
         </div>
+        <div className="container mt-4">
+        <Cards/>
+      </div>
       </div>
     </>
   );
