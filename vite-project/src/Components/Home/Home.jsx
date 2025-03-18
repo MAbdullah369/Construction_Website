@@ -6,7 +6,7 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import HomeImage from "../../Pictures/home2-slider-banner-img-03.jpg";
 import HomeImage_02 from "../../Pictures/home2-slider-banner-img-02.jpg";
 import HomeServices from "./HomeServices/HomeServices";
-
+import HomeImage03 from "../../Pictures/home2-slider-banner-img-01.jpg"
 const Home = () => {
   const [hoverPrevious, setHoverPrevious] = useState(false);
   const [hoverNext, setHoverNext] = useState(false);
@@ -14,57 +14,84 @@ const Home = () => {
   return (
     <>
       <div id="carouselExample" className="carousel slide">
-        <div className="carousel-inner">
-          {/* First Slide */}
-          <div className="carousel-item active">
-            <div className="image-container">
-              <img
-                src={HomeImage}
-                className="d-block w-100 full-width-img"
-                alt="Slide 1"
-              />
-              <div className="image-overlay"></div>
-            </div>
-            <div className="carousel-caption d-flex flex-column justify-content-center h-100">
-              <h1 className="Building">
-                BUILDING A <br />
-                <span className="blue-text better">BETTER NATION!</span>
-              </h1>
-              <p className="customStyling">
-                We strongly believe in the values of quality, strength, durability, and reliability
-              </p>
-              <div>
-                <button className="btn-Learn-More">LEARN MORE</button>
-                <button className="btn-Contact-us">CONTACT US</button>
-              </div>
-            </div>
-          </div>
+      <div className="carousel-inner">
+  {/* First Slide */}
+  <div className="carousel-item">
+    <div className="image-container">
+      <img
+        src={HomeImage03}
+        className="d-block w-100 full-width-img"
+        alt="Slide 2"
+      />
+      <div className="image-overlay"></div>
+    </div>
 
-          {/* Second Slide */}
-          <div className="carousel-item">
-            <div className="image-container">
-              <img
-                src={HomeImage_02}
-                className="d-block w-100 full-width-img"
-                alt="Slide 2"
-              />
-              <div className="image-overlay"></div>
-            </div>
-            <div className="carousel-caption d-flex flex-column justify-content-center h-100">
-              <h1 className="Building">
-                INNOVATING FOR <br />
-                <span className="blue-text better">A BRIGHTER FUTURE!</span>
-              </h1>
-              <p className="customStyling">
-                Our commitment drives us to deliver excellence in every project.
-              </p>
-              <div>
-                <button className="btn-Learn-More">LEARN MORE</button>
-                <button className="btn-Contact-us">CONTACT US</button>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div className="carousel-caption d-flex flex-column justify-content-center h-100">
+      <h1 className="Building">
+        BUILDING A <br />
+        <span className="blue-text better">BETTER NATION!</span>
+      </h1>
+      <p className="customStyling">
+        We strongly believe in the values of quality, strength, durability, and reliability
+      </p>
+      <div>
+        <button className="btn-Learn-More">LEARN MORE</button>
+        <button className="btn-Contact-us">CONTACT US</button>
+      </div>
+    </div>
+  </div>
+
+  {/* Second Slide */}
+  <div className="carousel-item active"> {/* Only this slide should have "active" */}
+    <div className="image-container">
+      <img
+        src={HomeImage}
+        className="d-block w-100 full-width-img"
+        alt="Slide 1"
+      />
+      <div className="image-overlay"></div>
+    </div>
+
+    <div className="carousel-caption d-flex flex-column justify-content-center h-100">
+      <h1 className="Building">
+        BUILDING A <br />
+        <span className="blue-text better">BETTER NATION!</span>
+      </h1>
+      <p className="customStyling">
+        We strongly believe in the values of quality, strength, durability, and reliability
+      </p>
+      <div>
+        <button className="btn-Learn-More">LEARN MORE</button>
+        <button className="btn-Contact-us">CONTACT US</button>
+      </div>
+    </div>
+  </div>
+  {/* Third Slide */}
+  <div className="carousel-item">
+    <div className="image-container">
+      <img
+        src={HomeImage_02}
+        className="d-block w-100 full-width-img"
+        alt="Slide 3"
+      />
+      <div className="image-overlay"></div>
+    </div>
+    <div className="carousel-caption d-flex flex-column justify-content-center h-100">
+      <h1 className="Building">
+        INNOVATING FOR <br />
+        <span className="blue-text better">A BRIGHTER FUTURE!</span>
+      </h1>
+      <p className="customStyling">
+        Our commitment drives us to deliver excellence in every project.
+      </p>
+      <div>
+        <button className="btn-Learn-More">LEARN MORE</button>
+        <button className="btn-Contact-us">CONTACT US</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
         <button
           className="carousel-control-prev"
