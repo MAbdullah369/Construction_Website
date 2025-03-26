@@ -1,0 +1,24 @@
+.footer{
+    position: relative;
+    display: inline;
+}
+.image_container img{
+    display: block;
+    width: 100%;
+}
+.Personal_info, .top_services{
+    position: absolute;
+    z-index: 1;
+    color: aliceblue;
+    font-size: larger;
+    /*transform: translate(-50%, -50%); */
+}
+.Personal_info{
+    top:50%;
+    left: 10%;
+    width: 25%;
+}
+.top_services{
+    top:50%;
+    left: 60%;
+}

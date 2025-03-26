@@ -8,11 +8,9 @@ import Projects from './Components/Projects/Projects'
 import Services from './Components/Services/Services'
 import Csr from './Components/Csr/Csr'
 import ContactUs from './Components/ContactUS/ContactUs'
-<<<<<<< HEAD
 import HomeServices from './Components/Home/HomeServices/HomeServices'
 import Footer from './Components/Footer/Footer'
-=======
->>>>>>> 3dd97e9de20ddb143ccac80cf354a3e4733f48c9
+
 
 function App() {
   return (
@@ -29,12 +27,9 @@ function App() {
       <Route path='/contact-us' element={<ContactUs/>}/>
     </Routes>
     </Router>
-<<<<<<< HEAD
     <HomeServices/>
     <Footer/>
-=======
    
->>>>>>> 3dd97e9de20ddb143ccac80cf354a3e4733f48c9
     </>
   )
 }
