@@ -2,9 +2,6 @@ import React from 'react'
 import Cards from '../Cards/Cards'
 const Projects = () => {
   return (
-<<<<<<< HEAD
-    <div></div>
-=======
     <>
     <div className='container'>
     <div className="mt-5 text-center">
@@ -20,7 +17,6 @@ const Projects = () => {
         <Cards/>
     </div>
     </>
->>>>>>> d08ac349e4e02a1696225cf72eba6701ef7ba176
   )
 }
 

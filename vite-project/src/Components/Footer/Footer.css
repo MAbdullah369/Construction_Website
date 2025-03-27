@@ -1,12 +1,19 @@
 .footer{
+    margin-top: 5%;
     position: relative;
     display: inline;
+    
 }
 .image_container img{
     display: block;
+    margin-top: 5%;
     width: 100%;
+    object-fit:inherit;
 }
-.Personal_info, .top_services{
+.Personal_info, .top_services, .recent-posts{
+    font-size: 14px ;
+    font-family: sans-serif;
+    margin: 0 0 8px;
     position: absolute;
     z-index: 1;
     color: aliceblue;
@@ -16,9 +23,30 @@
 .Personal_info{
     top:50%;
     left: 10%;
+    width: 15%;
+}
+.recent-posts{
+    top:50%;
+    left: 50%;
     width: 25%;
+}
+li{
+    margin: 5%;
+    list-style: none;
+}
+
+.recent-posts a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 14px;
+    display: inline;
+}
+.recent-posts img{
+    float: left;
+    width: 20%;
+    margin-right: 5%;
 }
 .top_services{
     top:50%;
-    left: 60%;
+    left: 30%;
 }
